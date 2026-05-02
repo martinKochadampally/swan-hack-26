@@ -1,0 +1,9 @@
+.env
+.env.local
+.env.*.local
+node_modules/
+voiced-backend/node_modules/
+frontend/voiced/node_modules/
+dist/
+build/
+.next/
