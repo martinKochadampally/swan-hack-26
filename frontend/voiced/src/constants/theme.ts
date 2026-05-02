@@ -1,0 +1,41 @@
+// src/constants/theme.ts
+export const theme = {
+  colors: {
+    cream:       '#F7F4EF',
+    ink:         '#1A1714',
+    soft:        '#6B6560',
+    muted:       '#EAE6DF',
+    border:      '#E2DDD6',
+    card:        '#FFFFFF',
+    accent:      '#2D6A4F',
+    accentLight: '#D8F0E5',
+    accentMid:   '#52B788',
+    warn:        '#E07A5F',
+    warnLight:   '#FAE8E3',
+    green:       '#52B788',
+    greenLight:  '#D8F0E5',
+    yellow:      '#F4A261',
+    yellowLight: '#FEF3CD',
+    red:         '#E07A5F',
+    redLight:    '#FAE8E3',
+  },
+  fonts: {
+    sans:    'System',
+    display: 'Georgia',
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 16,
+    lg: 24,
+    xl: 32,
+    xxl: 48,
+  },
+  radius: {
+    sm:   8,
+    md:   12,
+    lg:   16,
+    xl:   20,
+    full: 100,
+  },
+}

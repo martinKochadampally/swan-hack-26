@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Voiced",
+    "slug": "voiced",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F7F4EF"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.voiced.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Voiced needs microphone access to hear your voice intake"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F7F4EF"
+      },
+      "permissions": ["android.permission.RECORD_AUDIO"],
+      "package": "com.voiced.app"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Voiced needs microphone access to hear your voice intake"
+        }
+      ]
+    ]
+  }
+}
