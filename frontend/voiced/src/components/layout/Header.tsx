@@ -1,11 +1,13 @@
 // src/components/layout/Header.tsx
 import React from 'react'
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet, Platform } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { theme } from '../../constants/theme'
 
 export function Header({ showBack = false }: { showBack?: boolean }) {
   const navigation = useNavigation()
+
+  if (!showBack && Platform.OS === 'web') return null
 
   return (
     <View style={styles.container}>
@@ -30,8 +32,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
-    paddingTop: 56,
-    paddingBottom: 16,
+    paddingTop: 52,
+    paddingBottom: 14,
     borderBottomWidth: 1,
     borderBottomColor: theme.colors.border,
     backgroundColor: theme.colors.cream,
