@@ -45,5 +45,4 @@ router.post("/student", async (req, res) => {
     data,
   });
 });
-
 export default router;
