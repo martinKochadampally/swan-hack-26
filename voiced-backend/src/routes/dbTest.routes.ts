@@ -1,4 +1,4 @@
-import express from "express";
+import * as express from "express";
 import { supabase } from "../db/supabase";
 
 const router = express.Router();
@@ -45,4 +45,5 @@ router.post("/student", async (req, res) => {
     data,
   });
 });
+
 export default router;
