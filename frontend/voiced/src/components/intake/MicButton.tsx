@@ -1,9 +1,8 @@
 // src/components/intake/MicButton.tsx
 import React, { useEffect, useRef } from 'react'
 import {
-  TouchableOpacity, View, StyleSheet, Animated
+  TouchableOpacity, View, StyleSheet, Animated, Text
 } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
 import { theme } from '../../constants/theme'
 
 export function MicButton({
@@ -74,11 +73,7 @@ export function MicButton({
         ]}
         accessibilityLabel={isRecording ? 'Stop recording' : 'Start recording'}
       >
-        <Ionicons
-          name={isRecording ? 'stop' : 'mic'}
-          size={30}
-          color="white"
-        />
+        <Text style={styles.icon}>{isRecording ? '■' : '🎙'}</Text>
       </TouchableOpacity>
     </View>
   )
@@ -105,5 +100,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 1,
+  },
+  icon: {
+    color: '#FFFFFF',
+    fontSize: 28,
+    fontWeight: '700',
   },
 })
